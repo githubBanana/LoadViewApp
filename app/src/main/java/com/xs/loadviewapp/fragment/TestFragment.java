@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.xs.loadinglib.AppHelpFragment;
 import com.xs.loadinglib.LoadingFragment;
 import com.xs.loadviewapp.R;
 
@@ -37,9 +38,10 @@ public class TestFragment extends BaseFragment {
     private void initView(View view) {
         final Button mBtn = (Button) view.findViewById(R.id.btn_touch);
         mBtn.setOnClickListener((view1) -> {
-            showProgress();
+         /*   showProgress();
             Toast.makeText(getActivity(),"test",Toast.LENGTH_LONG).show();
-            mBtn.postDelayed(() -> dismissProgress(),5000);
+            mBtn.postDelayed(() -> dismissProgress(),5000);*/
+            AppHelpFragment.getHelp("test").show(getChildFragmentManager(),"test");
         });
     }
 
