@@ -1,5 +1,5 @@
     usage method
-    ====
+====
     protected void showProgress(String message) {
         runOnUiThread(() -> LoadingFragment.getLoad(message).show(getSupportFragmentManager(),"load"));
     }
