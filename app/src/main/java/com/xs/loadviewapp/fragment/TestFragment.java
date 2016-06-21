@@ -41,7 +41,8 @@ public class TestFragment extends BaseFragment {
          /*   showProgress();
             Toast.makeText(getActivity(),"test",Toast.LENGTH_LONG).show();
             mBtn.postDelayed(() -> dismissProgress(),5000);*/
-            AppHelpFragment.getHelp("test").show(getChildFragmentManager(),"test");
+//            AppHelpFragment.getHelp("test").show(getChildFragmentManager(),"test");
+            showProgress();
         });
     }
 
